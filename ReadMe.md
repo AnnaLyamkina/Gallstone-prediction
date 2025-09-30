@@ -22,7 +22,8 @@ The focus is on showing how to:
 
 ## 📂 Dataset
 
-- Source: [UCI Gallstone Dataset](https://www.kaggle.com/datasets/xixama/gallstone-dataset-uci)  
+- Source: [UCI Gallstone Dataset](https://www.kaggle.com/datasets/xixama/gallstone-dataset-uci)
+- Description and analysis:[ Medicine 103(8):p e37258, February 23, 2024.](https://journals.lww.com/md-journal/toc/2024/02230) | DOI: 10.1097/MD.0000000000037258  
 - Samples: 319 patients  
 - Features:  
   - Clinical demographics: Age, Sex, BMI, Comorbidities  
@@ -64,7 +65,7 @@ The focus is on showing how to:
 | Model          | Accuracy | ROC-AUC |
 |----------------|---------|---------|
 | ElasticNet     | 77.9%   | 0.843    |
-| Neural Network | xx.x%   | 0.xx    |
+| Neural Network | 78.9%   | 0.831    |
 
 **Top predictors (from SHAP & ElasticNet):**
  
@@ -96,6 +97,10 @@ gallstone-prediction
 
 ├── 04_neural_network_model.ipynb
 
-│── data/
+├──  data/ saved data splits
+
+├── scripts/ some utiliies for pipeline evaluation
+
+├── results/ for NN part some routines (especially, the nested CV) take a considerable time, so the results are saved in filed
 
 │── README.md
